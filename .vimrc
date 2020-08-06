@@ -3,24 +3,27 @@ set noswapfile
 
 call plug#begin('~/.vim/plugged')
 
-" File Navigation
+" Navigation
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'pechorin/any-jump.vim'
 
-" Python tab autocomplete
+" Python
 Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
-
-" Other
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'gruvbox-community/gruvbox'
 Plug 'vim-scripts/indentpython.vim'
+
+" Theme
+Plug 'gruvbox-community/gruvbox'
 
 call plug#end()
 
 " Python tab complete top down
 let g:SuperTabDefaultCompletionType = "<c-n>"
+
+" Any jump configuration
+let g:any_jump_ignored_files = ['/tests/*', '/venv/*', '/resources/*']
 
 " Style
 syntax on
@@ -46,3 +49,6 @@ set splitright
 " Relative and current line number
 set rnu
 set number
+
+" Line Width
+set colorcolumn=88
