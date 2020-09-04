@@ -14,6 +14,10 @@ Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
 Plug 'vim-scripts/indentpython.vim'
 
+" js
+Plug 'pangloss/vim-javascript'
+Plug 'MaxMEllon/vim-jsx-pretty'
+
 " Theme
 Plug 'gruvbox-community/gruvbox'
 
@@ -52,3 +56,5 @@ set number
 
 " Line Width
 set colorcolumn=88
+
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
