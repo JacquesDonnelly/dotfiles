@@ -42,6 +42,9 @@ set incsearch
 set hlsearch
 nnoremap <leader><space> :nohlsearch<CR>
 
+" Nice Replacing                                                                        
+nnoremap <leader>s :OverCommandLine<CR> :%s/    
+
 " NerdTree 
 let g:NERDTreeWinSize=40
 map <C-n> :NERDTreeToggle<CR>
