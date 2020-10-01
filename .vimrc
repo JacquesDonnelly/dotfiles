@@ -21,6 +21,9 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 " Theme
 Plug 'gruvbox-community/gruvbox'
 
+" Other
+Plug 'osyo-manga/vim-over'
+
 call plug#end()
 
 " Python tab complete top down
