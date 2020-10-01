@@ -21,8 +21,11 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 " Theme
 Plug 'gruvbox-community/gruvbox'
 
-" Other
+" Nice Substitution Preview
 Plug 'osyo-manga/vim-over'
+
+" Nice commenting out
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
